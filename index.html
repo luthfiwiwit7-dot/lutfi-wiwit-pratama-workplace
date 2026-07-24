@@ -6,7 +6,7 @@
     <title>Document</title>
 
      <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="grid.css">
+     <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -27,8 +27,19 @@
     <div class="actions">
     <button class="btn login">Login</button>
     <button class="btn trial">Try Whitepace Free →</button>
+    <button class="hamburger" aria-label="Open menu">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
 </div>
-        </div>
+
+    
+
+</div>
+
+       
 </header>
 
 <section class="hero">
@@ -310,7 +321,7 @@
         </li>
 
         <li>
-            <img src="image2/vector.svg" alt="">
+            <img src="image2/Vector.svg" alt="">
             <span>200 MB max. note size</span>
         </li>
 
@@ -445,7 +456,7 @@
     <div class="your-work-content">
 
     <h2 class="section-title">
-        Your work, everywhere <span>you are</span>
+        Your work, everywhere you are
     </h2>
 
 
@@ -514,45 +525,62 @@
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading">
+
             <h2 class="section-title">
-                    our <span class="highlight-word">sponsors</span>
-                </h2>
+                Our <span class="highlight-word">Sponsors</span>
+            </h2>
+
         </div>
 
-        <div class="sponsors-logo">
+        <div class="row sponsors-logo">
 
-            <img src="icon/Apple.svg" alt="Apple">
+            <div class="col-1 sponsor-item">
+                <img class="apple-logo"
+                     src="icon/Apple.svg"
+                     alt="Apple">
+            </div>
 
-            <img src="icon/Microsoft.svg" alt="Microsoft">
+            <div class="col-5 sponsor-item">
+                <img class="microsoft-logo"
+                     src="icon/Microsoft.svg"
+                     alt="Microsoft">
+            </div>
 
-            <img src="icon/Slack.svg" alt="Slack">
+            <div class="col-3 sponsor-item">
+                <img class="slack-logo"
+                     src="icon/Slack.svg"
+                     alt="Slack">
+            </div>
 
-            <img src="icon/Google.svg" alt="Google">
+            <div class="col-3 sponsor-item">
+                <img class="google-logo"
+                     src="icon/Google.svg"
+                     alt="Google">
+            </div>
 
         </div>
 
     </div>
-
 </section>
+
 <section class="apps">
+
     <div class="container">
 
-    <div class="apps-content">
+        <div class="row apps-content">
 
-    <img class="apps-pattern"
-         src="image/Element.svg"
-         alt="">
+            <div class="col-6">
+                <div class="apps-image-wrapper">
+                    <img src="image3/Apps.svg" class="apps-image" alt="">
+                </div>
+            </div>
 
-    <div>
-        <img src="image3/Apps.svg" class="apps-image"
-                     alt="">
-    </div>
+            <div class="col-6">
 
+                <div class="apps-text">
 
-    <div class="apps-text">
-
-        <div class="text-block">
+                 <div class="text-block">
 
             <div class="title-wrapper">
                 <h2 class="section-title">Work with Your Favorite Apps Using whitepace</h2>
@@ -569,10 +597,13 @@
             <span class="btn-arrow"></span>
         </button>
 
-        </div>
-    </div>
-</div>
+                </div>
 
+            </div>
+
+        </div>
+
+    </div>
 </section>
 <section class="testimonial">
     <div class="container">
@@ -587,9 +618,10 @@
         </div>
 
 
-    <div class="testimonial-cards">
+    <div class="row testimonial-cards">
 
-            <div class="client-card">
+        <div class="col-4">
+            <div class=" client-card">
 
     <div class="client-comment">
 
@@ -604,7 +636,7 @@
 
     </div>
 
-    <div class="client-profile">
+    <div class="col-4 client-profile">
 
         <img src="card testi/Avater.svg"
              alt="Oberon Shaw"
@@ -624,8 +656,10 @@
     </div>
 
 </div>
+</div>
 
-           <div class="client-card-blue">
+            <div class="col-4">
+           <div class=" client-card-blue">
 
     <div class="client-comment">
         <img src="card testi/Quote.svg" alt="Quote" class="quote-icon">
@@ -647,7 +681,9 @@
     </div>
 
 </div>
+</div>
 
+            <div class="col-4">
            <div class="client-card-blue">
 
     <div class="client-comment">
@@ -679,17 +715,18 @@
     </div>
 
 </div>
+</div>
 
         </div>
 
         <!-- Slider -->
-
+        <div class="col-12"></div>
         <div class="testimonial-slider">
 
             <img src="image3/Slider.svg" alt="">
 
         </div>
-
+        </div>
 
 
     </div>
@@ -700,8 +737,8 @@
     <div class="container">
 
 
-    <div class="thanks-content">
-
+    <div class="row thanks-content">
+            <div class="col-12">
             <div class="thanks-text">
 
                 <h2 class="section-title">
@@ -729,6 +766,7 @@ Add your whole team as your needs grow.
             <img class="icon-logo" src="image3/App-icon.svg" alt="">
 
     </div>
+    </div>
 
    
             
@@ -736,10 +774,11 @@ Add your whole team as your needs grow.
 
 <footer class="footer">
 
-    <div class="footer-container">
+    <div class="container">
 
-        <div class="footer-top">
+        <div class="row footer-top">
 
+            <div class="col-3">
             <div class="footer-brand">
                 <img src="image/Logo.svg" alt="Whitepace Logo">
     
@@ -749,32 +788,36 @@ Add your whole team as your needs grow.
                     We make a better workspace around the world
                 </p>
             </div>
+            </div>
 
-
+            <div class="col-2">
             <div class="footer-column">
                 <h3>Product</h3>
                 <a class="active">Overview</a>
                 <a>Pricing</a>
                 <a>Customer stories</a>
             </div>
+            </div>
 
-
+            <div class="col-2">
             <div class="footer-column">
                 <h3>Resources</h3>
                 <a>Blog</a>
                 <a>Guides & tutorials</a>
                 <a>Help center</a>
             </div>
+            </div>
 
-
+            <div class="col-2">
             <div class="footer-column">
                 <h3>Company</h3>
                 <a>About us</a>
                 <a>Careers</a>
                 <a>Media kit</a>
             </div>
+            </div>
 
-
+            <div class="col-3">
             <div class="footer-action">
 
                 <h2>
@@ -790,13 +833,15 @@ Add your whole team as your needs grow.
                 </button>
 
             </div>
+            </div>
 
 
         </div>
 
 
-        <div class="footer-bottom">
+        <div class="row footer-bottom">
 
+            <div class="col-9">
             <div class="footer-links">
 
                 <span>
@@ -820,11 +865,13 @@ Add your whole team as your needs grow.
                 </span>
 
             </div>
+            </div>
 
-
-            <img class="social" src="image3/Social Icon.svg" alt="">
-    </div>
-
+            <div class="col-3">
+                <div class="footer-social">
+                    <img class="social" src="image3/Social Icon.svg" alt="">
+                </div>
+            </div>
         </div>
 
 
