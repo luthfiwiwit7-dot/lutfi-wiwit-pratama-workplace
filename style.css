@@ -2768,7 +2768,7 @@ p{
 
         scroll-snap-type:x mandatory;
 
-        scrollbar-width:none;
+       
 
     }
 
@@ -2858,6 +2858,7 @@ p{
 .sponsor-item img{
     width:auto;
     max-width:250px;
+    padding: 15px;
 }
 
 
@@ -2909,8 +2910,6 @@ p{
         padding:20px 24px;
 
         scroll-snap-type:x mandatory;
-
-        scrollbar-width:none;
 
         align-items:flex-start;
 
